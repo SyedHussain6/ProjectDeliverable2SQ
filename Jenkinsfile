@@ -16,14 +16,18 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'mvn clean test -f src/test/java/com/example/myproject/pom.xml'
+                dir('src/test/java/com/example/myproject') {
+                    sh 'mvn clean test'
+                }
             }
         }
         
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'mvn package -DskipTests -f src/main/java/com/example/myproject/pom.xml'
+                dir('src/main/java/com/example/myproject') {
+                    sh 'mvn package -DskipTests'
+                }
             }
         }
         
