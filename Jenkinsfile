@@ -1,25 +1,34 @@
 pipeline {
     agent any
+    tools {
+        maven 'maven' 
+    }
     stages {
-        stage('Build') {
+        stage ('Init') {
             steps {
-                // Checkout source code from Git repository
-                git 'https://github.com/SyedHussain6/ProjectDeliverable2SQ.git'
-                // Run Maven build
-                sh 'mvn clean install'
+                sh 'echo "Start of Job"'
+                sh 'ls -la'
             }
         }
-        stage('Test') {
+        stage ('Test') {
             steps {
-                // Run tests
-                sh 'mvn test'
+                // Change directory to the current workspace before running tests
+                dir('.') {
+                    sh 'mvn clean test'
+                }
             }
         }
-        stage('Deploy') {
+        stage ('Build') {
             steps {
-                // Deploy the application (replace with your deployment steps)
-                sh 'echo "Deploying application"'
+                // Change directory to the current workspace before building
+                dir('.') {
+                    sh 'mvn clean package -DskipTests'
+                }
+            }
+        }
+        stage ('Deploy') {
+            steps {
+                sh 'echo "bye bye"'
             }
         }
     }
-}
