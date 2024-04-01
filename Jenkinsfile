@@ -13,19 +13,17 @@ pipeline {
             }
         }
         
-        stage('Build') {
-            steps {
-                echo 'Building...'
-                sh 'mvn clean package'
-                // Replace 'mvn clean package' with your actual build command
-            }
-        }
-        
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'mvn test'
-                // Replace 'mvn test' with your actual test command
+                sh 'mvn clean test -f src/test/java/com/example/myproject/pom.xml'
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                echo 'Building...'
+                sh 'mvn package -DskipTests -f src/main/java/com/example/myproject/pom.xml'
             }
         }
         
