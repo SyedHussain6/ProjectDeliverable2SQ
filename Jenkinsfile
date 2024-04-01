@@ -1,34 +1,46 @@
 pipeline {
     agent any
+    
     tools {
-        maven 'maven' 
+        maven 'maven'
     }
+
     stages {
-        stage ('Init') {
+        stage('Initialize') {
             steps {
-                sh 'echo "Start of Job"'
-                sh 'ls -la'
+                echo 'Initializing...'
+                // You can add any initialization steps here
             }
         }
-        stage ('Test') {
+        
+        stage('Build') {
             steps {
-                // Change directory to the current workspace before running tests
-                dir('.') {
-                    sh 'mvn clean test'
-                }
+                echo 'Building...'
+                sh 'mvn clean package'
+                // Replace 'mvn clean package' with your actual build command
             }
         }
-        stage ('Build') {
+        
+        stage('Test') {
             steps {
-                // Change directory to the current workspace before building
-                dir('.') {
-                    sh 'mvn clean package -DskipTests'
-                }
+                echo 'Testing...'
+                sh 'mvn test'
+                // Replace 'mvn test' with your actual test command
             }
         }
-        stage ('Deploy') {
+        
+        stage('Deploy') {
             steps {
-                sh 'echo "bye bye"'
+                echo 'Deploying...'
+                // Add your deployment steps here
             }
         }
     }
+
+    post {
+        always {
+            echo 'Pipeline finished.'
+            // You can add any post-build actions here
+        }
+    }
+}
