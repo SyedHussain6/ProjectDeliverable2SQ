@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ec54fc1f-8faf-4fb0-b4fd-14adeb798c22" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2djth5v2iThE9ozBGfvzjCco6JW" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.myproject.service" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.All in SQProjectDeliverable1">
+    <configuration name="All in SQProjectDeliverable1 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SQProjectDeliverable1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in SQProjectDeliverable1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SQProjectDeliverable1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookingTest.testCalculateTotalPriceForTwoPassengers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SQProjectDeliverable1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.myproject.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.myproject.model" />
+      <option name="MAIN_CLASS_NAME" value="com.example.myproject.model.BookingTest" />
+      <option name="METHOD_NAME" value="testCalculateTotalPriceForTwoPassengers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlightTest.FlightDurationTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SQProjectDeliverable1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.myproject.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.myproject.model" />
+      <option name="MAIN_CLASS_NAME" value="com.example.myproject.model.FlightTest" />
+      <option name="METHOD_NAME" value="FlightDurationTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SQProjectDeliverable1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.myproject.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.myproject.model" />
+      <option name="MAIN_CLASS_NAME" value="com.example.myproject.model.UserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in SQProjectDeliverable1" />
+        <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.BookingTest.testCalculateTotalPriceForTwoPassengers" />
+        <item itemvalue="JUnit.All in SQProjectDeliverable1 (1)" />
+        <item itemvalue="JUnit.FlightTest.FlightDurationTest2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec54fc1f-8faf-4fb0-b4fd-14adeb798c22" name="Default Changelist" comment="" />
+      <created>1710533430426</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710533430426</updated>
+    </task>
+    <servers />
+  </component>
+</project>
