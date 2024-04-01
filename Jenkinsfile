@@ -17,7 +17,7 @@ pipeline {
             steps {
                 echo 'Testing...'
                 dir('src/test/java/com/example/myproject') {
-                    sh 'mvn clean test -f /var/jenkins_home/workspace/Proj2SQC/pom.xml'
+                    sh 'mvn clean test -f /var/jenkins_home/workspace/Proj2SQCI/pom.xml'
                 }
             }
         }
@@ -26,7 +26,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 dir('src/main/java/com/example/myproject') {
-                    sh 'mvn package -DskipTests -f /var/jenkins_home/workspace/Proj2SQC/pom.xml'
+                    sh 'mvn package -DskipTests -f /var/jenkins_home/workspace/Proj2SQCI/pom.xml'
                 }
             }
         }
