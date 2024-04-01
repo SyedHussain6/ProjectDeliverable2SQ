@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Checkout source code from Git repository
-                git 'https://github.com/yourusername/ProjectDeliverable2SQ.git'
+                git 'https://github.com/SyedHussain6/ProjectDeliverable2SQ.git'
                 // Run Maven build
                 sh 'mvn clean install'
             }
