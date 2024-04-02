@@ -1,48 +1,37 @@
 pipeline {
-    agent any
-    
-    tools {
-        maven 'maven'
+  agent any
+  tools {
+    maven 'maven' 
+  }
+
+  stages {
+    stage ('Init') {
+      steps {
+        sh 'echo "Start of Job"'
+        sh 'ls -la'
+      }
     }
 
-    stages {
-        stage('Initialize') {
-            steps {
-                echo 'Initializing...'
-                // You can add any initialization steps here
-            }
-        }
-        
-        stage('Test') {
-            steps {
-                echo 'Testing...'
-                dir('src/test/java/com/example/myproject') {
-                    sh 'mvn clean test -f /var/jenkins_home/workspace/Proj2SQCI/pom.xml'
-                }
-            }
-        }
-        
-        stage('Build') {
-            steps {
-                echo 'Building...'
-                dir('src/main/java/com/example/myproject') {
-                    sh 'mvn package -DskipTests -f /var/jenkins_home/workspace/Proj2SQCI/pom.xml'
-                }
-            }
-        }
-        
-        stage('Deploy') {
-            steps {
-                echo 'Deploying...'
-                // Add your deployment steps here
-            }
-        }
+
+    stage ('test') {
+      steps {
+        sh 'mvn clean test -f ./pom.xml'
+      }
     }
 
-    post {
-        always {
-            echo 'Pipeline finished.'
-            // You can add any post-build actions here
-        }
+
+    stage ('build') {
+      steps {
+        sh 'mvn package -DskipTests -f ./pom.xml'
+      }
     }
+
+
+    stage ('Deploy') {
+      steps {
+        sh 'echo "bye bye"'
+      }
+
+    }
+  }
 }
