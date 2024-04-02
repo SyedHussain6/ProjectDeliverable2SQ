@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* font family */
+  line-height: 1.6;
+  background-color: #f0f5f9; /*background color to a light blue-gray */
+}
+
+header, footer {
+  background-color: #004080; /*header and footer background color to dark blue */
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Arial Black', sans-serif; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f5f9;
+  background-image: url("C:/Users/sibis/Desktop/SQDel2/954080_aircraft-height-sky-wings-clouds-05e-down-beautiful-hd-wallpapers_1920x1200_h.jpg"); /* Add your background image path here */
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  padding: 2rem;
+}
+
+.booking-form {
+  width: 40%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-grow: 1; 
+}
+
+.booking-form h2 {
+  font-family: 'Times New Roman', serif; /* font family for form heading */
+  color: #004080; /*color for form heading */
+}
+
+.booking-form label {
+  color: #004080; /*color for form labels */
+}
+
+.booking-form input[type="text"],
+.booking-form select,
+.booking-form input[type="date"],
+.booking-form button {
+  width: 100%; /* input fields and button take full width */
+  padding: 0.7rem; /*represents the padding */
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Arial', sans-serif; /* font family for form fields */
+  color: #555; /* color for form fields */
+}
+
+.booking-form button {
+  background-color: #004080;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.booking-form button:hover {
+  background-color: #002147;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f5f9;
+}
+
+.container {
+  width: 80%; 
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #004080;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+/* various attributes */
+footer {
+  background-color: #004080;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f5f9;
+}
+
+.container {
+  width: 80%; 
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #004080;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+/* Various attributes such as background color, padding, etc. */
+footer {
+  background-color: #004080;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-info,
+.footer-links {
+  flex-basis: 45%;
+}
+
+.footer-links ul {
+  list-style-type: none;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
