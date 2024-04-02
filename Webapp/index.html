@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Booking Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Flight Booking Application</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Flights</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section class="booking-form">
+      <h2>Book a Flight</h2>
+            <form action="#" method="post" id="flightForm">
+                <div id="stops">
+                    <div class="stop">
+                        <label for="departure1">Departure Airport:</label>
+                        <input type="text" id="departure1" name="departure1">
+                        <label for="destination1">Destination Airport:</label>
+                        <input type="text" id="destination1" name="destination1">
+                        <label for="date1">Date:</label>
+                        <input type="date" id="date1" name="date1">
+                    </div>
+                </div>
+                <!-- Replace onclick attribute with id for the button -->
+                <button type="button" id="addStopButton">Add Stop</button>
+
+                <button type="submit">Search Flights</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="company-info">
+              <h3>Company Information</h3>
+              <p>Address: 123 Main Street, Cityville, USA</p>
+              <p>Phone: (123) 456-7890</p>
+              <p>Email: info@example.com</p>
+            </div>
+            <div class="footer-links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+          <p>&copy; 2024 Flight Booking Application</p>
+        </div>
+      </footer>
+    </body>
+    </html>
