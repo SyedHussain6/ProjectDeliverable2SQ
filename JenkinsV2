@@ -5,10 +5,10 @@ pipeline {
         stage('Build and Test') {
             steps {
                 // Checkout code from main branch
-                git branch: 'main', url: 'https://github.com/yourusername/yourrepository.git'
+                git branch: 'main', url: 'https://github.com/SyedHussain6/ProjectDeliverable2SQ.git'
                 
                 // Navigate to webapp folder
-                dir('webapp') {
+                dir('Webapp') {
                     // Build and test commands
                     sh 'npm install' // Example for Node.js project
                     sh 'npm test'
