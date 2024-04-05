@@ -1,7 +1,7 @@
 pipeline {
  environment {
     PROJECT = credentials('project_id') // secret text for the project id. I set it manually in Jenkins credentials
-    APP_NAME = "flightwebapp"
+    APP_NAME = "proj2webapp"
     CLUSTER = credentials("cluster_name") // secret text for the cluster name. I set it manually in Jenkins credentials
     CLUSTER_ZONE = credentials("cluster_zone") // secret text for the cluster zone. I set it manually in Jenkins credentials
     REPO_PATH= credentials("repo_path") // secret text for the repo path. I set it manually in Jenkins credentials
@@ -34,7 +34,7 @@ spec:
     stages {
         stage ('test') {
             steps {
-                sh 'mvn clean test -f ./pom.xml'
+                sh 'mvn clean test -f ./Webapp/pom.xml'
             }
         }
         stage('build'){
@@ -73,14 +73,14 @@ spec:
                         script{
                             try{
                                 // delete it if a previous deployment exists
-                                sh 'kubectl delete deployment webapp-deployment'
+                                sh 'kubectl delete deployment binarycalculator-deployment'
                             }
                             catch (Exception e){
                                 
                             }
                         }
                         // create a new deployment
-                        sh 'kubectl create deployment webapp-deployment --image $IMAGE_TAG --port=8080'
+                        sh 'kubectl create deployment binarycalculator-deployment --image $IMAGE_TAG --port=8080'
 
                     }
                 }
@@ -97,14 +97,14 @@ spec:
                         script{
                             try{
                                 // create if it the service doesn't exist. No need to recreate it
-                                sh 'kubectl expose deployment webapp-deployment --type=LoadBalancer --name=webapp-service'
+                                sh 'kubectl expose deployment binarycalculator-deployment --type=LoadBalancer --name=binarycalculator-service'
                             }
                             catch (Exception e){
                                 
                             }
                         }
                         // display the service IP
-                        sh "kubectl get service/webapp-service -o jsonpath='{.status.loadBalancer.ingress[0].ip}'"
+                        sh "kubectl get service/binarycalculator-service -o jsonpath='{.status.loadBalancer.ingress[0].ip}'"
 
                     }
                 }
